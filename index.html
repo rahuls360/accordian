@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jQuery Assignment</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css' />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>Accordian</h1>
+
+  <div class="accordian">
+    <div class="accordian-link">
+      <a href="#" id="link1">Collapsible Group Item #1</a>
+    </div>
+    <div class="accordian-body">
+      <p id="text1" class="d-none">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam corporis magni consequatur at perferendis rerum natus
+        dolorem voluptas nemo. Laboriosam necessitatibus nostrum praesentium porro saepe deserunt, ut sint aliquid unde.</p>
+    </div>
+  </div>
+
+  <div class="accordian">
+    <div class="accordian-link">
+      <a href="#" id="link2">Collapsible Group Item #2</a>
+    </div>
+    <div class="accordian-body">
+      <p id="text2" class="d-none">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam corporis magni consequatur at perferendis rerum natus
+        dolorem voluptas nemo. Laboriosam necessitatibus nostrum praesentium porro saepe deserunt, ut sint aliquid unde.</p>
+    </div>
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+  <script>
+    $(document).ready(function () {
+      $("#link1").on('click', function () {
+        $("#text1").slideToggle();
+      });
+
+      $("#link2").on('click', function () {
+        $("#text2").slideToggle();
+      });
+    });
+  </script>
+</body>
+
+</html>
